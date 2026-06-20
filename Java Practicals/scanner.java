@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class scanner {
     public static void main (String[] args) {
-        Scanner x = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.println("enter the number");
-        int a = x.nextInt();
+        int a = input.nextInt();
 
         switch(a) {
             case 1:
@@ -13,7 +13,11 @@ public class scanner {
             break;
 
             case 2:
-            System.out.println("monday");
+            System.out.println("tuesday");
+            break;
+
+            case 5:
+            System.out.println("friday");
             break;
 
             default:
