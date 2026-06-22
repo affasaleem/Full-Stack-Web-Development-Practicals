@@ -4,43 +4,53 @@ public class Task10_SimpleCalculatorSwitch {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter the first number: ");
-        double firstNumber = input.nextDouble();
-
-        System.out.print("Enter the second number: ");
-        double secondNumber = input.nextDouble();
+        System.out.print("Enter number 1: ");
+        int num1 = input.nextInt();
 
         System.out.print("Choose an operation (+, -, *, /): ");
         char operator = input.next().charAt(0);
 
-        double result;
+        System.out.print("Enter number 2: ");
+        int num2 = input.nextInt();
+
+        int result;
         boolean validOperation = true;
 
         switch (operator) {
             case '+':
-                result = firstNumber + secondNumber;
-                break;
+            result = num1 + num2;
+            break;
+
             case '-':
-                result = firstNumber - secondNumber;
-                break;
+            result = num1 - num2;
+            break;
+
             case '*':
-                result = firstNumber * secondNumber;
-                break;
+            result = num1 * num2;
+            break;
+
             case '/':
+                if (num2 != 0) {
+                    result = num1 / num2;
+                    
+                } else {
+                    System.out.println("Division: Cannot divide by zero.");
                     result = 0;
                     validOperation = false;
                 }
-                break;
+            break;
+
             default:
-                System.out.println("Error: Invalid operator entered.");
+                System.out.println("invalid input");
                 result = 0;
                 validOperation = false;
         }
 
         if (validOperation) {
-            System.out.println("Result: " + firstNumber + " " + operator + " " + secondNumber + " = " + result);
+            System.out.println("Result: " + num1 + " " + operator + " " + num2 + " = " + result);
         }
 
         input.close();
     }
+        
 }

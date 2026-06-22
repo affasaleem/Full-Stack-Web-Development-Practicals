@@ -1,9 +1,5 @@
 import java.util.Scanner;
 
-/**
- * Task 11: Check whether a character entered by the user is a vowel
- * or a consonant.
- */
 public class Task11_VowelOrConsonant {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -15,14 +11,15 @@ public class Task11_VowelOrConsonant {
         char lowerCaseChar = Character.toLowerCase(character);
 
         if (!Character.isLetter(character)) {
-            System.out.println("Error: The input is not an alphabet character.");
+            System.out.println("Error! input an alphabet character.");
         } else if (lowerCaseChar == 'a' || lowerCaseChar == 'e' || lowerCaseChar == 'i'
-                || lowerCaseChar == 'o' || lowerCaseChar == 'u') {
+        || lowerCaseChar == 'o' || lowerCaseChar == 'u') {
             System.out.println(character + " is a VOWEL.");
         } else {
             System.out.println(character + " is a CONSONANT.");
         }
 
         input.close();
+
     }
 }

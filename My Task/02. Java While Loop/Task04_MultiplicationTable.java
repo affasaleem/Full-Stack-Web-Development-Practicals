@@ -1,23 +1,21 @@
 import java.util.Scanner;
 
-/**
- * Task 04: Print the multiplication table of a given number using a while loop.
- */
 public class Task04_MultiplicationTable {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter a number to print its multiplication table: ");
-        int number = input.nextInt();
+        System.out.print("Enter number: ");
+        int num = input.nextInt();
 
-        final int TABLE_LIMIT = 10;
+        final int TABLE_LIMIT = 12;
         int multiplier = 1;
+        int r;
 
-        System.out.println("Multiplication table of " + number + ":");
+        System.out.println("Multiplication table of " + num + ":");
 
         while (multiplier <= TABLE_LIMIT) {
-            int result = number * multiplier;
-            System.out.println(number + " x " + multiplier + " = " + result);
+            r = num * multiplier;
+            System.out.println(num + " x " + multiplier + " = " + r);
             multiplier++;
         }
 

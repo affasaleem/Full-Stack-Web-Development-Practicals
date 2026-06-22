@@ -10,6 +10,7 @@ public class Task03_LargestOfTwo {
         System.out.print("Enter Number 2: ");
         int num2 = input.nextInt();
 
+        // Compare the two numbers using the ternary operator
         int largest = (num1 > num2) ? num1 : num2 ; 
 
         if (num1 == num2){

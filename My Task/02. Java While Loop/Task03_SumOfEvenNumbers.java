@@ -1,27 +1,22 @@
 import java.util.Scanner;
 
-/**
- * Task 03: Find the sum of all even numbers from 1 to n.
- * The value of n is entered by the user.
- */
 public class Task03_SumOfEvenNumbers {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter the value of n: ");
+        System.out.print("Enter number limit: ");
         int n = input.nextInt();
 
+        int num = 1;
         int sum = 0;
-        int number = 1;
-
-        while (number <= n) {
-            if (number % 2 == 0) {
-                sum += number;
+        while (num <= n) {
+            if (num % 2 == 0) {
+                sum += num;  //sum = sum + num;
             }
-            number++;
+            num++;
         }
 
-        System.out.println("Sum of all even numbers from 1 to " + n + " is: " + sum);
+        System.out.print(" sum of all even from 1 to " + n + " is: " + sum);
 
         input.close();
     }

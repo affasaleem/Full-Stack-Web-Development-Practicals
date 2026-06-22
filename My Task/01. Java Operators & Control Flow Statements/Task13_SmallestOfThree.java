@@ -1,28 +1,25 @@
 import java.util.Scanner;
 
-/**
- * Task 13: Find the smallest among three numbers entered by the user.
- */
 public class Task13_SmallestOfThree {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter the first number: ");
-        double firstNumber = input.nextDouble();
+        System.out.print("Enter number 1: ");
+        double num1 = input.nextDouble();
 
-        System.out.print("Enter the second number: ");
-        double secondNumber = input.nextDouble();
+        System.out.print("Enter number 2: ");
+        double num2 = input.nextDouble();
 
-        System.out.print("Enter the third number: ");
-        double thirdNumber = input.nextDouble();
+        System.out.print("Enter number 3: ");
+        double num3 = input.nextDouble();
 
-        double smallest = firstNumber;
+        double smallest = num1;
 
-        if (secondNumber < smallest) {
-            smallest = secondNumber;
+        if (num2 < smallest) {
+            smallest = num2;
         }
-        if (thirdNumber < smallest) {
-            smallest = thirdNumber;
+        if (num3 < smallest) {
+            smallest = num3;
         }
 
         System.out.println("The smallest number is: " + smallest);

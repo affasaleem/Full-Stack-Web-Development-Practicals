@@ -1,9 +1,5 @@
 import java.util.Scanner;
 
-/**
- * Task 05: Reverse a given number.
- * Example: 1234 -> 4321
- */
 public class Task05_ReverseNumber {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -11,14 +7,14 @@ public class Task05_ReverseNumber {
         System.out.print("Enter an integer number: ");
         int originalNumber = input.nextInt();
 
-        // Work with the absolute value so negative numbers are handled correctly
+        // Math.abs() returns the positive version of a number.
         int numberToReverse = Math.abs(originalNumber);
         int reversedNumber = 0;
 
         while (numberToReverse != 0) {
-            int lastDigit = numberToReverse % 10;
-            reversedNumber = (reversedNumber * 10) + lastDigit;
-            numberToReverse /= 10;
+            int lastDigit = numberToReverse % 10; // Ex: 123 % 10 = 3
+            reversedNumber = (reversedNumber * 10) + lastDigit; //Ex: (0 * 10) + 3 = 3
+            numberToReverse /= 10; //Ex: 123 / 10 = 12
         }
 
         // Restore the negative sign if the original number was negative
@@ -32,3 +28,9 @@ public class Task05_ReverseNumber {
         input.close();
     }
 }
+
+/*My Study Purpose:
+% 10   -> Extract the last digit
+/ 10   -> Remove the last digit
+* 10   -> Shift digits left to build the reversed number
+*/

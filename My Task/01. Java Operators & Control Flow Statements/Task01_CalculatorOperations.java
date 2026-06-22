@@ -19,7 +19,7 @@ public class Task01_CalculatorOperations {
         System.out.println("Subtraction: " + sub);
         System.out.println("Multiplication: " + mul);
         
-
+        // Handle division separately to avoid division by zero
         if (num2 != 0) {
             int div = num1 / num2;
             System.out.println("Division: " + div);

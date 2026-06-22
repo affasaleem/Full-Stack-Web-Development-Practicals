@@ -1,10 +1,6 @@
 import java.util.Scanner;
 
-/**
- * Task 14: Display the month name based on a month number (1-12)
- * using a switch statement.
- */
-public class Task14_MonthNameSwitch {
+public class Task14_MonthNameSwitch  {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -54,4 +50,5 @@ public class Task14_MonthNameSwitch {
 
         input.close();
     }
+    
 }

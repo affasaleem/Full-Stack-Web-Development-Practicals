@@ -1,19 +1,16 @@
 import java.util.Scanner;
 
-/**
- * Task 05: Check whether a number is positive, negative, or zero.
- */
 public class Task05_PositiveNegativeZero {
-    public static void main(String[] args) {
+    public static void main (String[]args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter a number: ");
-        double number = input.nextDouble();
+        System.out.print("Enter Your Number: ");
+        int num = input.nextInt();
 
-        if (number > 0) {
-            System.out.println(number + " is a POSITIVE number.");
-        } else if (number < 0) {
-            System.out.println(number + " is a NEGATIVE number.");
+        if (num < 0) {
+            System.out.println(num + " is a NEGATIVE number.");
+        } else if (num > 0) {
+            System.out.println(num + " is a POSITIVE number.");
         } else {
             System.out.println("The number is ZERO.");
         }
