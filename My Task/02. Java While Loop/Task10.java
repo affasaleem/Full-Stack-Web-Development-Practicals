@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
-/**
- * Task 10: Menu-driven calculator using a while loop.
+/*
  * The program keeps showing the menu and performing calculations
- * until the user chooses to exit.
+   until the user chooses to exit.
  */
-public class Task10_MenuDrivenCalculator {
+public class Task10 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -30,35 +29,38 @@ public class Task10_MenuDrivenCalculator {
             int choice = input.nextInt();
 
             if (choice == EXIT) {
-                System.out.println("Exiting the calculator. Goodbye!");
+                System.out.println("Existing the calculator. Goodbye!");
                 continueProgram = false;
             } else if (choice >= ADD && choice <= DIVIDE) {
-                System.out.print("Enter the first number: ");
-                double firstNumber = input.nextDouble();
+                System.out.print("Enter Number 1: ");
+                double num1 = input.nextDouble();
 
-                System.out.print("Enter the second number: ");
-                double secondNumber = input.nextDouble();
+                System.out.print("Enter Number 2: ");
+                double num2 = input.nextDouble();
 
                 switch (choice) {
                     case ADD:
-                        System.out.println("Result: " + firstNumber + " + " + secondNumber
-                                + " = " + (firstNumber + secondNumber));
+                        System.out.println("Result: " + num1 + " + " + num2 + " = " + (num1 + num2));
                         break;
+
                     case SUBTRACT:
-                        System.out.println("Result: " + firstNumber + " - " + secondNumber
-                                + " = " + (firstNumber - secondNumber));
+                        System.out.println("Result: " + num1 + "  " + num2 + " = " + (num1 - num2));
                         break;
+
                     case MULTIPLY:
-                        System.out.println("Result: " + firstNumber + " * " + secondNumber
-                                + " = " + (firstNumber * secondNumber));
+                        System.out.println("Result: " + num1 + " * " + num2 + " = " + (num1 * num2));
                         break;
+
                     case DIVIDE:
-                        if (secondNumber == 0) {
+                        if (num2 == 0) {
                             System.out.println("Error: Division by zero is not allowed.");
                         } else {
-                            System.out.println("Result: " + firstNumber + " / " + secondNumber
-                                    + " = " + (firstNumber / secondNumber));
+                            System.out.println("Result: " + num1 + " / " + num2
+                                    + " = " + (num1 / num2));
                         }
+                        break;
+                
+                    default:
                         break;
                 }
             } else {
@@ -69,3 +71,6 @@ public class Task10_MenuDrivenCalculator {
         input.close();
     }
 }
+
+
+

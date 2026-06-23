@@ -1,4 +1,4 @@
-public class Task02_Task02_OddNumbers1To50 {
+public class Task02_OddNumbers1To50 {
     public static void main(String[] args) {
         int num = 1;
         final int limit = 50;

@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-/**
- * Task 06: Count the number of digits in a given number.
- */
 public class Task06_CountDigits {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -27,5 +24,33 @@ public class Task06_CountDigits {
         System.out.println("The number " + originalNumber + " has " + digitCount + " digit(s).");
 
         input.close();
+
     }
+    
 }
+
+
+
+/*FOR MY STUDY PURPOSE:
+
+    Input Number
+        |
+        v
+    Convert to positive (Math.abs)
+        |
+        v
+    Is number == 0 ?
+   /           \
+ Yes            No
+  |              |
+digitCount=1     |
+                 v
+          Remove last digit
+          (number /= 10)
+                 |
+          digitCount++
+                 |
+          Repeat until
+          number == 0
+
+*/

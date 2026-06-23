@@ -16,6 +16,7 @@ This repository includes:
 - CSS Practical 
 - Bootstrap Practicals
 - JavaScript Practicals
+- Java Practicals
 - Backend Development Practicals (Upcoming)
 - Database Exercises (Upcoming)
 - Full-Stack Development Projects (Upcoming)
@@ -27,13 +28,16 @@ All tasks and practicals are organized according to the topics covered during th
 ## 📂 Current Contents
 
 ### > HTML Practicals
-Basic HTML exercises and practical activities completed during the course.
+<!-- Basic HTML exercises and practical activities completed during the course. -->
 
 ### > CSS Practicals
-CSS practice files covering styling, layouts, and responsive design concepts.
+<!-- CSS practice files covering styling, layouts, and responsive design concepts. -->
 
 ### > JavaScript Practicals
-Basic JS exercises and practical activities completed during the course.
+<!-- Basic JS exercises and practical activities completed during the course. -->
+
+### > Java Practicals
+<!-- Basic JS exercises and practical activities completed during the course. -->
 
 <!-- ### 🅱️ Bootstrap Practicals
 Bootstrap exercises focused on responsive layouts and component-based development. -->
@@ -63,7 +67,9 @@ Future updates may include:
 - HTML5
 - CSS3
 - Bootstrap 5
-- JavaScript (Upcoming)
+- JavaScript
+- JQuery
+- Java
 
 ### Backend (Upcoming)
 - Node.js

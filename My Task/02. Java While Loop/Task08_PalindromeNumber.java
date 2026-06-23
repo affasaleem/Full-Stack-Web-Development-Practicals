@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Task 08: Check whether a number is a palindrome or not.
+ * Check whether a number is a palindrome or not.
  * A palindrome number reads the same forwards and backwards (e.g., 121, 1331).
  */
 public class Task08_PalindromeNumber {
