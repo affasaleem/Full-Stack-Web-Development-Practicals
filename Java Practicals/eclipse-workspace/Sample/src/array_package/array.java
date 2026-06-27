@@ -1,18 +1,18 @@
-package sample_package;
+package array_package;
 
 import java.util.Scanner;
 
-public class test {
+public class array {
 	static Scanner input = new Scanner(System.in);
 	public static void main(String[] args) {
-		//test.array();
-		//test.onedarray();
-		//test.twodarray();
-		//test.threedarray();
-		test.jaggedarray();
+		//array.arr();
+		//array.onedarray();
+		//array.twodarray();
+		//array.threedarray();
+		array.jaggedarray();
 	}
 	
-	public static void array() {
+	public static void arr() {
 		System.out.println("=======Array========");
 		int[] a = new int[] {1,2,3,4,5};
 		System.out.println(a[3]);
