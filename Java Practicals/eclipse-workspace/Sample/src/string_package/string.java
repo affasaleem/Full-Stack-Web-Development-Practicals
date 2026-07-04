@@ -12,7 +12,7 @@ public class string {
         String s4 = new String("TAT");
 
         // Printing all the Strings
-//        System.out.println(s1.equals(s2));
+       System.out.println(s1.equals(s2));
 //        System.out.println(s2);
 //        System.out.println(s3.equals(s4));
 //        System.out.println(s4);
