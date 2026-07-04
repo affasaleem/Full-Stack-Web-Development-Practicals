@@ -4,8 +4,10 @@ public class Constructors {
 
 	public static void main(String[] args) {
 //		Demo object = new Demo();
-		Demo1 object = new Demo1(10,20);
-		object.display();
+		Demo1 object1 = new Demo1(10,20);
+		object1.display();
+		Demo1 object2 = new Demo1(object1);
+		object2.display();
 
 	}
 }
@@ -23,6 +25,12 @@ class Demo1 {
 	public Demo1(int a,int b) {
 		this.a=a;
 		this.b=b;
+	}
+	
+//	COPY CONSTRUTOR
+	public Demo1(Demo1 obj) {
+		this.a=obj.a;
+		this.b=obj.b;
 	}
 	
 	public void display() {
