@@ -6,7 +6,7 @@ public class Constructors {
 //		Demo object = new Demo();
 		Demo1 object1 = new Demo1(10,20);
 		object1.display();
-		Demo1 object2 = new Demo1(object1);
+		Demo1 object2 = new Demo1(object1); // output for COPY CONSTRUTOR
 		object2.display();
 
 	}
